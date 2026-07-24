@@ -73,7 +73,7 @@ Energy score (lower = better) -- SEES the difference:
     B - A: +0.005835   (B is scored strictly worse)
 ```
 
-The **variogram score** (Scheuerer & Hakamada, 2015) is a robust alternative
+The **variogram score** (Scheuerer & Hamill, 2015) is a robust alternative
 that targets pairwise dependence directly. Adding a multivariate proper scoring
 term — even at a small weight — is the standard remedy for the joint-blindness
 of a sum of marginal CRPS.
@@ -91,10 +91,12 @@ exactly. No data files, no network.
 
 ## References
 
-- Gneiting & Raftery (2007), *Strictly Proper Scoring Rules, Prediction, and
-  Estimation*, JASA — CRPS, the energy score, and propriety.
-- Scheuerer & Hakamada (2015), *Variogram-based proper scoring rules for
-  probabilistic forecasts of multivariate quantities*, Monthly Weather Review.
+- Gneiting, T. & Raftery, A. E. (2007), *Strictly Proper Scoring Rules,
+  Prediction, and Estimation*, Journal of the American Statistical Association,
+  102(477), 359–378 — CRPS, the energy score, and propriety.
+- Scheuerer, M. & Hamill, T. M. (2015), *Variogram-Based Proper Scoring Rules
+  for Probabilistic Forecasts of Multivariate Quantities*, Monthly Weather
+  Review, 143(4), 1321–1334, doi:10.1175/MWR-D-14-00269.1.
 
 ## License
 
