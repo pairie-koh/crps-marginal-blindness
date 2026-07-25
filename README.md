@@ -48,11 +48,16 @@ score.
 ## Why this matters
 
 A scoring rule determines what forecasters build. If the rule is blind to path
-realism, the field is steered toward models that fit the marginals — including,
-in practice, ensembles with heavier tails than the real process, because
-exaggerated tails can improve average marginal CRPS while the (irrelevant-to-
-score) joint structure is left unrealistic. The best-*scoring* model and the
-best-*forecasting* model become different objects.
+realism, nothing in the objective pushes forecasters toward it — so the joint
+structure drifts wherever the marginal fit happens to leave it, and the
+best-*scoring* model and the best-*forecasting* model become different objects.
+
+The mechanism is indifference rather than perverse reward, and the distinction
+matters. A sum of marginal CRPS is strictly proper *for the marginals*, so it
+does not pay to misstate them. It simply assigns **zero** weight to the
+dependence structure, as the demonstration above shows exactly. Unrealistic path
+structure is therefore not rewarded — it is unpriced, which is enough for a
+field of optimizers to drift away from realism at no cost.
 
 ## The fix
 
